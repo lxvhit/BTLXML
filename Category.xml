@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet href="Category.css" type="text/css"?> -->
+<?xml-stylesheet type="text/xsl" href="Category.xsl"?>
+<DSSanpham xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Category.xsd">
+    <Sanpham>
+        <id>1</id>
+        <name>Iphone 6</name>
+        <Category_id>1</Category_id>
+        <desscription>Điện thoại iphone</desscription>
+        <amount>100</amount>
+        <price>1000000</price>
+        <Created_at>2020-01-01</Created_at>
+        <image type=".jpeg">hoang</image>
+    </Sanpham>
+    <Sanpham>
+        <id>2</id>
+        <name>Xaomi</name>
+        <Category_id>2</Category_id>
+        <desscription>Điện thoại xaomi</desscription>
+        <amount>200</amount>
+        <price>200000</price>
+        <Created_at>2020-02-02</Created_at>
+        <image type=".jpeg">Anh.png</image>
+    </Sanpham>
+    <Sanpham>
+        <id>3</id>
+        <name>Samsung galaxy</name>
+        <Category_id>3</Category_id>
+        <desscription>Điện thoại samsung</desscription>
+        <amount>1000</amount>
+        <price>1000000</price>
+        <Created_at>2021-02-02</Created_at>
+        <image>1.jpg</image>
+    </Sanpham>
+    <Sanpham>
+        <id>4</id>
+        <name>VinPro</name>
+        <Category_id>4</Category_id>
+        <desscription>Điện thoại vin</desscription>
+        <amount>1</amount>
+        <price>100000000</price>
+        <Created_at>2020-02-02</Created_at>
+        <image>Pro.jpg</image>
+    </Sanpham>
+</DSSanpham>
