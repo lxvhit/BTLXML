@@ -10,7 +10,7 @@
         <desscription>Điện thoại iphone</desscription>
         <amount>100</amount>
         <price>1000000</price>
-        <Created_at>2020-01-01</Created_at>
+        <Created_at>2022-08-17T00:00:00</Created_at>
         <image type=".jpeg">hoang</image>
     </Sanpham>
     <Sanpham>
@@ -20,8 +20,8 @@
         <desscription>Điện thoại xaomi</desscription>
         <amount>200</amount>
         <price>200000</price>
-        <Created_at>2020-02-02</Created_at>
-        <image type=".jpeg">Anh.png</image>
+        <Created_at>2022-12-01T00:00:00</Created_at>
+        <image type=".jpeg">Anh</image>
     </Sanpham>
     <Sanpham>
         <id>3</id>
@@ -30,8 +30,8 @@
         <desscription>Điện thoại samsung</desscription>
         <amount>1000</amount>
         <price>1000000</price>
-        <Created_at>2021-02-02</Created_at>
-        <image>1.jpg</image>
+        <Created_at>2022-02-02T00:00:00</Created_at>
+        <image type=".jpeg">abc</image>
     </Sanpham>
     <Sanpham>
         <id>4</id>
@@ -40,7 +40,7 @@
         <desscription>Điện thoại vin</desscription>
         <amount>1</amount>
         <price>100000000</price>
-        <Created_at>2020-02-02</Created_at>
-        <image>Pro.jpg</image>
+        <Created_at>2022-02-02T00:00:00</Created_at>
+        <image type=".png">Pro</image>
     </Sanpham>
 </DSSanpham>

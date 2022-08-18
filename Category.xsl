@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html" indent="yes"/>
-    <xsl:template match="/">
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                            xmlns:fn="http://www.w3.org/2005/xpath-functions"
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+                            <xsl:output method="html" indent="yes"/>
+                            <xsl:template match="/">
         <html>
             <body>
                 <div style="display:flex;flex-direction:column; align-items:center" >
@@ -86,6 +88,7 @@
                                 </td>
                                 <td>
                                     <xsl:value-of select="image"/>
+                                     <xsl:value-of select="image/@type"/>
                                 </td>
                             </tr>
                         </xsl:for-each>
@@ -130,6 +133,7 @@
                                         </td>
                                         <td>
                                             <xsl:value-of select="image"/>
+                                             <xsl:value-of select="image/@type"/>
                                         </td>
                                     </tr>
                                 </xsl:when>
@@ -158,6 +162,7 @@
                                         </td>
                                         <td>
                                             <xsl:value-of select="image"/>
+                                             <xsl:value-of select="image/@type"/>
                                         </td>
                                     </tr>
                                 </xsl:otherwise>
@@ -203,6 +208,7 @@
                                         </td>
                                         <td>
                                             <xsl:value-of select="image"/>
+                                             <xsl:value-of select="image/@type"/>
                                         </td>
                                     </tr>
                                 </xsl:when>
@@ -231,13 +237,14 @@
                                         </td>
                                         <td>
                                             <xsl:value-of select="image"/>
+                                             <xsl:value-of select="image/@type"/>
                                         </td>
                                     </tr>
                                 </xsl:otherwise>
                             </xsl:choose>
                         </xsl:for-each>
                     </table>
-                    <h2>Hiển thị dữ liệu sản phẩm có ngày nhập trước ngày hiện tại không quá 3 ngày</h2>
+                    <!-- <h2>Hiển thị dữ liệu sản phẩm có ngày nhập trước ngày hiện tại không quá 3 ngày</h2>
                     <table border="1" width="75%" >
                         <tr bgcolor="#9acd32">
                             <th>id</th>
@@ -250,8 +257,10 @@
                             <th>image</th>
                         </tr>
                         <xsl:for-each select="DSSanpham/Sanpham">
+                        <xsl:variable name="now" select="xs:dateTime(current-date())"/>
+                        <xsl:variable name="date" select="xs:dateTime(Created_at)"/>
+                      <xsl:if test="fn:days-from-duration($now - $date) &lt;=3 and fn:days-from-duration($now - $date) &gt;0">
                             <tr>
-
                                 <td>
                                     <xsl:value-of select="id"/>
                                 </td>
@@ -272,13 +281,15 @@
                                 </td>
                                 <td>
                                     <xsl:value-of select="Created_at"/>
+                                    
                                 </td>
                                 <td>
                                     <xsl:value-of select="image"/>
                                 </td>
                             </tr>
+                            </xsl:if>
                         </xsl:for-each>
-                    </table>
+                    </table> -->
                 </div>
             </body>
         </html>
